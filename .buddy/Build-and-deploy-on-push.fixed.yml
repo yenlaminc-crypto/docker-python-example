@@ -1,0 +1,7 @@
+- pipeline: build-and-deploy-on-push
+  name: Build and deploy on push
+  refs:
+  - refs/heads/master
+  fail_on_prepare_env_warning: true
+  events:
+  - type: WEBHOOK
